@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+
+
+\cvname{Shakti} % Your name
+\cvjobtitle{Singh} % Job title/career
+
+\cvaddress{singhshakti1201@gmail.com} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 902 403 6614} % Phone number
+\cvsite{github.com/singh-shakti94} % Personal website
+\cvdate{} % Date of birth
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 Education
+%----------------------------------------------------------------------------------------
+
+\Education{Master of Applied Computer Science Dalhousie University, Halifax NS \newline| 2019 | Focus on Data Science
+\newline \newline Bachelor of Technology \newline  G.G.S.I.P University, New Delhi India \newline| 2017 | GPA 3.6/4.0} % To have no Education section, just remove all the text and leave \Education{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{ \textbf{Languages} : Python, R, MATLAB, Java (Solid foundation in OOPS concept) 
+\newline \textbf{Frameworks} : Tensorflow, Keras, PyTorch, Pandas, Numpy, SciPy  
+\newline  \textbf{Data Visualization} : MS PowerBI, DAX, Tableau, D3.js, \textit{matplotlib}, \textit{ggplot}
+\newline  \textbf{Machine Learning} : Linear \& Logistic Regression, Random Forests, Trees, Probabilistic Modeling, K-means/medoids, DBSCAN, Hierarchical Clustering, PCA
+\newline  \textbf{Deep Learning}: Convolutional NNs, Recurrent NNs, GANs, Auto-encoders, NLP, Computer Vision, Transfer Learning, Fine-Tuning
+\newline \textbf{Data Analysis \& Mining}: RDBMS based querying using SQL, MySQL, Statistical Analysis, Data Modeling (ER), Data Pipeline Modeling, AWS (ec2 instances), basics of Elastic Search and NoSQL databases
+\newline \textbf{Others}: Git Version Control, \LaTeX, Unix (basic)}
+
+
+
+\ExtraCurricular{Co-Founder @ WebEDs (now EDS) Institute, New Delhi | 2016 | \\ - Created content for tutorials on basic programming concepts, Web dev and Android app dev. 
+\\ - Organized guest talks and tutorial sessions for pupils.
+\newline\newline Teaching Volunteer @ Make A Difference, India | 2017 | 
+\\- Taught Mathematics to kids in an Orphanage for a year.
+\\- Assisted in organizing field trips for kids to POIs.}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience and Internships}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{Since Jan'19}{Data Analyst - OpEx co-op}{Teck Resources Ltd., Sparwood BC}{
+	- Worked with predictive maintenance team to develop and deploy Machine learning models (primarily Auto-encoders) that can predict the current health status and remaining life of the bearings installed on the mining equipment
+	\\- Developed a module in python to pre-process the collected data from the sensors and use it to train a deep learning network (RNN with Auto-encoder developed in Pytorch)
+	\\- Attained an accuracy of 96\% by long term training and testing, decreasing unforeseen maintenance cost by a significant amount
+	\\- Analyzed the mining data and built visualizations to help generate value from the data, increase production and optimize processes
+	\\- Created custom measures in DAX to explain the cause of the underlying problem and to assist in discovering solutions
+	\\- Worked on automating the forecasting process using python scripts performing data cleansing, statistical analysis and forecasting using open-source libraries in python}
+	
+	\twentyitem{Apr-July'18}{AI Researcher - AgBot competition}{Nexus Robotics, Halifax NS}{- Contributed to Award winning (AgBOT challenge '18 at Purdue University) robot capable of identifying and plucking weed in a farm
+	\\- Assisted the team in Transfer Learning of the dataset on pre-trained deep learning models (YOLO and ROLO)
+	\\- Collected data and facilitated labelling of the data using openCV
+	\\- Fine-tuned the learned model by introducing special test cases (data examples) to increase its accuracy and robustness}
+	
+	\twentyitem{Apr-Aug'17}{Research Intern - Oil Spill Detection}{DRDO,  New Delhi India}{- Developed a software module to detect and differentiate the type of petroleum liquid (or mixture) given its spectral information from a radar to be installed on the runway to identify oil leaks.
+	\\- Performed cleaning of the spectral data (denoising and temporal adjustments) and calculated cross correlation to obtain similarity to the base spectrum
+	\\- Integrated the final algorithm developed in R to Java API using \textit{rJava} package to show and monitor the results real-time in a web app}
+	
+	
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Research and Projects}
+
+\begin{twenty} % Environment for a short list with no descriptions
+	\twentyitem{May-Aug'18}{ETL Project on Loan Defaults} {Dalhousie University}{
+	- Developed python modules to be run on remote machines (tested on AWS) to extract, load and transform data into CSV format
+	\\- Implemented an ML classifier (Random Forest) to classify loans and compared performance with other classifiers (Decision Trees, Logistic Regression).}
+	\twentyitem{May-Aug'18}{Iceberg Classification}{Dalhousie University}{- Worked in a team of two, developing CNN models in tensorflow and keras to classify icebergs from ships
+	\\- Developed different architectures of CNNs (AlexNet and its variations), Residual networks and other extracted feature-based models
+	\\- Utilized state-of-art techniques like data augmentation, dropouts, transfer learning of the data on VGG16 pre-trained model}
+	\twentyitem{Sep-Dec'18}{ES Optimization Study}{Dalhousie University}{- Developed MATLAB scripts to study the effects of Evolution Strategies optimization algorithm on different objective functions}
+	\twentyitem{Sep-Dec'17}{Geo-Spatial Data Classification}{Big Data Center - Dalhousie University}{- Performed Hierarchical classification of modes of transportation in a geo-spatial dataset by extracting trajectories and finding relations among the features
+	\\- Compared the created hierarchical model to flat structure classification models}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+% \section{Achievements}
+
+% \begin{twenty} % Environment for a short list with no descriptions
+% 	\twentyitem{Dec'17}{Book Distribution Campaign}{}{Single handedly ran a campaign \& sold over 150+ books within 3 days}
+% 	\twentyitem{Mar'17}{First - VIKAS Soch Ideation Marathon}{}{Won 10k in cash for best social startup idea at Launchpad E-Summit}
+% 	\twentyitem{Mar'16}{Runners Up - Ground Reality}{}{Won 12k in cash for the best B-Plan submission at Pearl 2017}
+% 	\twentyitem{Feb'10}{Best All Rounder Award}{}{Ranked first across all campuses of school for all-round excellence}
+% 	\twentyitem{2010-11}{Olympiads(School Level)}{}{GOLD Medals won at NSO(2011), NCO(2010) \& IMO(2010))}
+% 	%\twentyitemshort{<dates>}{<title/description>}
+% \end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+% \section{Electives and MOOCs}
+
+% \begin{twenty} % Environment for a list with descriptions
+% 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+% \end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
